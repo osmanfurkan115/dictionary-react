@@ -27,3 +27,23 @@
       margin-left: 44% !important;
   }
 
+  .meaningColumn {
+    margin-top: 5% !important;
+    height: 50% !important;
+    background-color: white !important;
+    /* margin-left: 10% !important; */
+  }
+
+  .meaningHeader {
+    font-size: 1.5vw !important;
+    color: #3f434d !important;
+    font-weight: bold !important;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  .meaningDesc {
+    font-size: 1.vw !important;
+    color: #3f434d !important;
+    font-weight: bold !important;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  

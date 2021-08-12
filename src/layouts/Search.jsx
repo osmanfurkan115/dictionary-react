@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {  Input } from 'semantic-ui-react'
-import MeaningsSearcher from '../pages/MeaningsSearcher'
+import MeaningsFilter from '../pages/MeaningsFilter'
 
 export default function Search() {
 
@@ -21,7 +21,7 @@ export default function Search() {
                 icon: "search", 
                 onClick: () => handleClick()
             }} onChange={(e) => handleChange(e)} placeholder='Type a word' className="search"/>
-            <MeaningsSearcher visible={meaningState} word = {word}></MeaningsSearcher>
+            <MeaningsFilter visible={meaningState} word = {word}></MeaningsFilter>
         </div>
     )
 }

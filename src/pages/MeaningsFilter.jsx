@@ -8,8 +8,10 @@ export default function MeaningsFilter({ visible, word }) {
     const [meanings, setMeanings] = useState([])
 
     useEffect(() => {
-        let wordService = new WordService();
-        wordService.getWord(word).then(result => setMeanings(result.data))
+        if(word !== "") {
+            let wordService = new WordService();
+            wordService.getWord(word).then(result => setMeanings(result.data))
+        }
     }, [word])
 
     return (

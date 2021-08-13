@@ -34,30 +34,16 @@ export default function Meanings({ meanings }) {
                         ({meanings[0].meanings[0].partOfSpeech})
                     </Grid.Column>
                     <Grid.Column width={4} className="meaningDesc">
-                        {/* {
-                            meanings[0].meanings.forEach(meaning => {
-                                <Container>
-                                    {meaning.definitions[0].definition}
-                                </Container>
-                            })
-                        } */}
                         {meanings[0].meanings[0].definitions[0].definition}
                         </Grid.Column>
                     
                 </Grid.Row>
                 <Grid.Row>
                 <Grid.Column width={4} className="meaningHeader" >
-                        Examples
+                        Example
                         
                     </Grid.Column>
                     <Grid.Column width={4} className="meaningDesc">
-                        {/* {
-                            meanings[0].meanings.forEach(meaning => {
-                                <Container>
-                                    {meaning.definitions[0].definition}
-                                </Container>
-                            })
-                        } */}
                         {meanings[0].meanings[0].definitions[0].example}
                     </Grid.Column>
                 </Grid.Row>

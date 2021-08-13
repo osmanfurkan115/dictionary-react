@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {  Input } from 'semantic-ui-react'
+import { Icon, Input } from 'semantic-ui-react'
 import MeaningsFilter from '../pages/MeaningsFilter'
 
 export default function Search() {
@@ -15,12 +15,19 @@ export default function Search() {
         setWord(e.target.value)
         setMeaningState(false)
     }
+
+    const handleEnter = (e) => {
+        if(e.keyCode === 13) {
+            handleClick()
+        }
+    }
+
     return (
         <div>
+            {/* icon={<Icon name="search" />} */}
             <Input focus action={{
-                icon: "search", 
                 onClick: () => handleClick()
-            }} onChange={(e) => handleChange(e)} placeholder='Type a word' className="search"/>
+            }} onChange={(e) => handleChange(e)} onKeyDown={handleEnter} placeholder='Type a word' icon="search"  className="search"/>
             <MeaningsFilter visible={meaningState} word = {word}></MeaningsFilter>
         </div>
     )

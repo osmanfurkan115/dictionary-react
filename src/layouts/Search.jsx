@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Icon, Input } from 'semantic-ui-react'
+import {  Input } from 'semantic-ui-react'
 import MeaningsFilter from '../pages/MeaningsFilter'
 
 export default function Search() {
